@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfStarter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfStarter"
+        mc:Ignorable="d"
+        
+        xmlns:col="clr-namespace:System.Collections;assembly=mscorlib" 
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        
+        Title="Main Window Start" Height="300" Width="500">
+    <Grid x:Name="meGrid">
+        <Label Content="UserName" HorizontalAlignment="Left" Margin="109,48,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="109,92,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.44,2.087"/>
+        <TextBlock HorizontalAlignment="Left" Margin="202,24,0,0" TextWrapping="Wrap" Text="Login Form" VerticalAlignment="Top" RenderTransformOrigin="-0.911,0.388"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="109,120,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.206,0.305"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="109,151,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnLogin" Width="100" Height="30" RenderTransformOrigin="0.65,0.953" Margin="109,193,284.6,27.4">MyBtn</Button>
+
+    </Grid>
+
+ 
+</Window>
