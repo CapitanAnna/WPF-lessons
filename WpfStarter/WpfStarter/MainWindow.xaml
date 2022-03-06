@@ -9,16 +9,17 @@
         xmlns:col="clr-namespace:System.Collections;assembly=mscorlib" 
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         
-        Title="Main Window Start" Height="300" Width="500">
-    <Grid x:Name="meGrid">
-        <Label Content="UserName" HorizontalAlignment="Left" Margin="109,48,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="109,92,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.44,2.087"/>
-        <TextBlock HorizontalAlignment="Left" Margin="202,24,0,0" TextWrapping="Wrap" Text="Login Form" VerticalAlignment="Top" RenderTransformOrigin="-0.911,0.388"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="109,120,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.206,0.305"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="109,151,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnLogin" Width="100" Height="30" RenderTransformOrigin="0.65,0.953" Margin="109,193,284.6,27.4">MyBtn</Button>
+        Title="Main Window Start" Height="350" Width="500">
+    <Canvas x:Name="myCanvas" Background="Aquamarine">
+        <Label x:Name="PointsText"  FontSize="20" Canvas.Left="350" Canvas.Top="3">Points:0/10</Label>
+        <Label x:Name="QuestionOrder" FontSize="20" Content="Questions" Canvas.Left="10" />
+        <TextBlock x:Name="QuestionText" FontSize="20" Canvas.Left="184" TextWrapping="Wrap" Text="Question 1" Canvas.Top="77"/>
+        <Button x:Name="btnAnswer1" Background="DarkSalmon" FontSize="16" Click="CheckAnswer" Width="200" Height="50" Tag="0" Canvas.Left="23" Canvas.Top="116" Content="A"></Button>
+        <Button x:Name="btnAnswer2" Background="DarkSalmon" FontSize="16" Click="CheckAnswer" Width="200" Height="50" Tag="0" Canvas.Left="247" Canvas.Top="116" Content="B"></Button>
+        <Button x:Name="btnAnswer3" Background="DarkSalmon" FontSize="16" Click="CheckAnswer" Width="200" Height="50" Tag="0" Canvas.Left="23" Canvas.Top="190" Content="C" RenderTransformOrigin="0.213,2.253"></Button>
+        <Button x:Name="btnAnswer4" Background="DarkSalmon" FontSize="16" Click="CheckAnswer" Width="200" Height="50" Tag="0" Canvas.Left="247" Canvas.Top="190" Content="D" RenderTransformOrigin="0.213,2.253"></Button>
 
-    </Grid>
+    </Canvas>
 
- 
+
 </Window>
